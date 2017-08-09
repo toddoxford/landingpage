@@ -1,0 +1,134 @@
+body {
+  font-size: 14px;
+}
+
+.home-slider {
+  background: image-url('bjrqld/blueprint.png') 50% center;
+}
+.contact-us {
+    background-color: #511012;
+
+  .section-header p {
+    color: #ffffff;
+    opacity: 0.7!important;
+  }
+  .contact-form #submit:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #fff;
+  }
+}
+
+.header-wrapper.variant-four {
+  .header {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+  .main-menu ul li a {
+    color: #ffffff;
+  }
+  .contact-options {
+    .email a, .phone-number a, .license {
+      color: #ffffff;
+    }
+    .license {
+      padding: 23px 0 23px 23px;
+    }
+  }
+
+}
+.header-wrapper.sticky-menu {
+  background-color: #3B0C0E;
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+  color: #511012;
+}
+
+.service-notes {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 8px;
+  }
+}
+
+.contact-details.variant-four {
+  background: image-url('bjrqld/map.png');
+}
+
+.contact-details.variant-four .section-header h2.title {
+  color: #511012;
+
+  small {
+    display: block;
+    margin-top: 4px;
+    color: #511012;
+  }
+}
+
+.contact-details.variant-four .contact-details-list {
+  border-right: 1px solid #e4dedb;
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact-details.variant-four .section-header {
+  padding-top: 50px;
+}
+
+.contact-details.variant-four .section-header h2.title {
+    margin-bottom: 30px;
+}
+
+// .team-member .designation {
+//   color: #058ED9;
+// }
+// .team-box:hover .info-team {
+//   background: #058ED9;
+// }
+// .flexslider.variant-one, .flexslider.variant-two, .home-slider {
+//     border-bottom: 3px solid #511012;
+// }
+
+.contact-details.variant-four .contact-details-list li {
+  color: #08B2E3;
+  a {
+    color: #08B2E3;
+  }
+  a:hover {
+    color: #058ED9;
+  }
+}
+
+.contact-details.variant-four .contact-details-list li .icon-telephone {
+    background-image: image-url('icon-telephone-3.png');
+}
+.contact-details.variant-four .contact-details-list li .icon-mail {
+    background-image: image-url('icon-mail-3.png');
+}
+.flexslider.variant-three .slide-description p {
+  color: #fff;
+}
+
+.organizations {
+  background: #fff;
+  margin: auto;
+  padding-top: 20px;
+  padding-top: 10px;
+  img {
+    max-width: 86px!important;
+    height: 50px!important;
+    margin: 0 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+.mean-container a.meanmenu-reveal span {
+  background: #511012;
+}
+// @media (max-width: 991px) {
+//   .image-team .info-team h5 {
+//     color: #058ED9;
+//   }
+// }

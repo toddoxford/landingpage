@@ -1,0 +1,16 @@
+@import 'bootstrap';
+@import 'font-awesome';
+@import 'flexslider';
+@import 'owl.carousel';
+@import 'adipoli';
+@import 'swipebox';
+@import 'meanmenu.min';
+@import 'main';
+@import 'animate.min';
+@import 'responsive-tables';
+@import 'bjrqld';
+
+.our-services.variant-four .services-section-carousel .prev,
+  .our-services.variant-four .services-section-carousel .next {
+    background: image-url('caroseul-nav.png') no-repeat #ffffff 0 0;
+}

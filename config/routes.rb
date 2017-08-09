@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'bjrqld', to: 'landing_pages#bjrqld'
+  get 'nvs',    to: 'landing_pages#nvs'
+
+  root to: 'landing_pages#home'
 end

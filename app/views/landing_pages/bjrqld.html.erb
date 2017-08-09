@@ -1,0 +1,239 @@
+<% content_for :title do %>
+  BJR Queensland Designs
+<% end %>
+
+<div class="preloader">
+  <div class="preloaderimg"></div>
+</div>
+<div id="top"></div>
+<div class="header-wrapper variant-four sticky-header">
+  <header class="header container custom-container-header" role="banner">
+    <div class="row">
+      <div class="col-md-5 custom-col-var4">
+        <div class="main-menu-wrapper">
+          <nav id="nav" class="parallax-menu main-menu clearfix" role="navigation">
+            <ul class="clearfix">
+              <li><a href="#top">Home</a></li>
+              <li><a href="#about-us">Service</a></li>
+              <li><a href="#work">Cost</a></li>
+              <li><a href="#contact-detail">Contact</a></li>
+              <li><a href="#contact-detail">The Process</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-md-2 custom-col-var4 text-center">
+        <div class="logo-wrapper">
+          <div id="logo">
+            <%= link_to image_tag('bjrqld/logo.png', id: 'logo-image', alt: 'BJR Qld'), '#top', title: 'BJR Qld Home' %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 custom-col-var4 text-right">
+        <div class="contact-card">
+          <div class="wrapper-contact-options">
+            <div class="contact-options">
+              <span class="email"><%= link_to fa_icon('envelope', text: 'brett@brjqld.com.au'), 'mailto:brett@brjqld.com.au' %></span>
+              <span class="phone-number"><%= link_to fa_icon('phone-square', text: '61+ 407 768 555'), 'tel:0407768555' %></span>
+              <span class="license visible-md">Lic. No. 1001728</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!--home slider-->
+<div class="home-slider  container-fluid home-slider-4">
+  <div class="inner-wrapper">
+    <div class="flexslider variant-three">
+      <ul class="slides">
+        <li>
+          <div class="container custom-container-slide">
+            <div class="slide-description">
+              <h2 class="title">Residential Design</h2>
+              <p>All scale of projects from new residential homes, alterations &amp; additions to units.</p>
+              <a class="slide-link" href="#about-us"> EXPLORE MORE </a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container custom-container-slide">
+            <div class="slide-description">
+              <h2 class="title">Commercial Deisgn</h2>
+              <p>Wide range of projects from commercial alterations/additions, small shopping complexes, gyms to office fitouts.</p>
+              <a class="slide-link" href="#about-us"> EXPLORE MORE </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--home slider ends-->
+
+<!--service section-->
+<section id="about-us" class="about-us section variant-four">
+  <div class="container wow fadeInUp animated">
+    <header class="section-header">
+        <h2 class="title"><span>Personalized Service</span></h2>
+        <h3 class="title">You will not deal with sales people, middlemen or staff</h3>
+    </header>
+
+    <div class="row">
+      <div class="team-member wow fadeIn col-md-3 col-sm-6 animated" data-wow-delay="0ms">
+        <div class="team-box">
+          <div class="image-team">
+            <%= image_tag 'bjrqld/owner.png', alt: 'Owner' %>
+            <div class="info-team">
+              <div class="info-contents">
+                <h4><a href="#">Brett Rogers</a></h4>
+                <h5 class="designation">Director/Owner</h5>
+                <p>
+                  Brett Rogers started BJR Queensland P/L in 1997 as a building design company to service
+                  the public, consultants, and builders. During the past 20 years he have been involved
+                  in a wide range of projects covering residential, commercial, industrial and mining.
+                </p>
+              </div>
+              <div class="wrapper-social text-center">
+              </div>
+            </div>
+            <div class="row organizations">
+              <div class="col-xs-6 text-center">
+                <%= image_tag 'bjrqld/masterbuilders.jpg' %>
+              </div>
+              <div class="col-xs-6 text-center">
+                <%= image_tag 'bjrqld/qbcc.jpg' %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-wow-delay="200ms" class="wow fadeIn col-md-9 col-sm-6 animated">
+        <div class="service-notes">
+          <h4 class="title">Project Management</h4>
+          <p>
+            When engaging BJR Queensland P/L to undertake your project,
+            you will be dealing with the director and owner Brett Rogers,
+            from the initial meeting right through until the completion of your project.
+          </p>
+          <p>
+            Brett is proud to be a member of the Queensland Master Builders Association,
+            and holds a Q.B.C.C. licence in Building Design and Building.
+          </p>
+          <p>
+            His personal role involves producing drawings, attending meetings,
+            answering any queries and liasing with other consultants.
+          </p>
+          <h4 class="title">Additional Support</h4>
+          <p>
+            During the preparation of your plans other consultants may be required
+            such as engineers, soils testers, building certifier, surveyor and town planner.
+          </p>
+          <p>
+            Lodging plans for building / development approval, and also arranging
+            suitable builders for the purpose of tendering are another serivce I can provide.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--service section ends-->
+<section id="cost" class="our-services-list variant-four section">
+  <div class="container wow fadeInUp animated">
+    <header class="section-header">
+      <h2 class="title">What's The Cost</h2>
+      <p>
+          I do not work on a square meterage rate or percentage of project cost. I believe
+          all projects in themselves are unique, and therefore will structure the cost
+          accordingly. Some clients may just want a very basic set of plans for building
+          approval and pricing, whilst others may require more detailed drawings and additional
+          services. This means the best outcome for you in terms of service and price.
+      </p>
+    </header>
+  </div>
+</section>
+<!--contact detail-->
+<section id="contact-detail" class="contact-details variant-four section">
+  <div class="container wow fadeInUp animated">
+    <div class="row">
+      <div class="col-sm-6 text-center">
+        <header class="section-header">
+          <h2 class="title">BJR<small>Queensland</small></h2>
+          <address class="wow bounceIn animated">
+            4 Rose St,<br>
+            Shelly Beach, QLD 4551,<br>
+            Australia
+          </address>
+        </header>
+      </div>
+      <div class="col-sm-6 text-center">
+        <div class="wrapper-contact-detail">
+          <ul class="contact-details-list clearfix">
+            <li class="phone-number wow fadeIn animated" data-wow-delay="200ms">
+              <div class="row">
+                <div class="col-sm-5 custom-col-icon">
+                  <i class="icon-telephone"></i>
+                </div>
+                <div class="col-sm-7">
+                  <span><%= link_to '61+ 407 768 555', 'tel:0407768555' %></span>
+                </div>
+              </div>
+            </li>
+            <li class="email wow fadeIn animated" data-wow-delay="600ms">
+              <div class="row">
+                <div class="col-sm-5">
+                  <i class="icon-mail"></i>
+                </div>
+                <div class="col-sm-7">
+                  <span><%= link_to 'brett@brjqld.com.au', 'mailto:brett@brjqld.com.au' %></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--    <div class="map-container clearfix">-->
+    <!--        -->    <!--    </div>-->
+</section>
+<!--contact detail ends-->
+
+<!--contact form-->
+<section id="contact" class="contact-us variant-four section">
+  <div class="container wow fadeInUp animated">
+    <header class="section-header">
+      <h2 class="title">GET IN TOUCH</h2>
+      <p>Fill up the below form and we will get back to you with 24 hours without fail</p>
+    </header>
+    <form class="contact-form wow fadeInUp animated" method="post" action="functions.php" novalidate="novalidate">
+      <p>
+        <input type="text" name="name" id="name" class="required" placeholder="Name"
+                       title="*Please enter your name">
+        <input type="text" name="email" id="email" class="email required" placeholder="Email Address"
+                       title="*Please enter your email address">
+      </p>
+      <p>
+        <input type="text" name="subject" id="subject" placeholder="Subject">
+      </p>
+      <p>
+        <textarea name="message" id="comment" class="required" placeholder="Message"
+                          title="*Please enter your message"></textarea>
+      </p>
+      <div class="clearfix">
+        <div class="status-wrapper">
+          <div class="error-container"></div>
+          <div id="message-sent"></div>
+        </div>
+        <div class="submit-and-loader">
+          <input type="submit" value="Submit Now" id="submit" name="submit">
+          <img src="images/ajax-loader-2.gif" id="contact-loader" alt="Loading...">
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<!--contact form ends-->
