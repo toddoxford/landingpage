@@ -40,6 +40,7 @@ gem 'rails-assets-tether'
 
 gem 'mail_form'
 gem 'roadie', '~> 3.2'
+gem 'pg', '~> 0.20'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
