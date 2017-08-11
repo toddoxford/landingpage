@@ -855,19 +855,6 @@ window.App = {
         });
     }
 
-    // Functions that should load on window.load event.
-    $window.load(function () {
-
-        $(".preloaderimg").fadeOut();
-        jQuery(".preloader").delay(200).fadeOut("slow").delay(200, function(){
-            jQuery(this).remove();
-        });
-
-        stickyHeader();
-        carouselStyles();
-        updateTables();
-    });
-
     // Functions that should load on window.resize event.
     $window.resize(function () {
         stickyHeader();
@@ -886,7 +873,6 @@ window.App = {
             $('.margin-box').css("padding-top", "0");
         }
 
-
         // scroll-to header fix variation one
         if ($(document).scrollTop() >= 1) {
             $("#logo-image").addClass("smaller");
@@ -903,10 +889,19 @@ window.App = {
             $(".variant-four #logo-image").removeClass("smaller");
         }
     });
+
+    stickyHeader();
+    carouselStyles();
+    updateTables();
     // ------
   }
 };
 
 $(document).on("turbolinks:load", function() {
+  $(".preloaderimg").fadeOut();
+  jQuery(".preloader").delay(200).fadeOut("slow").delay(200, function(){
+      jQuery(this).remove();
+  });
+
   return App.init();
 });
