@@ -2461,7 +2461,6 @@ input[type="submit"]:hover {
 .header-wrapper.sticky-menu .contact-card .phone-number {
   padding-top: 19px;
   padding-bottom: 19px;
-  background-position: left 25px;
 }
 .header-wrapper.sticky-menu .social_networks li a {
   border-color: #d3dae0;
@@ -8192,6 +8191,12 @@ span.line-vertical {
     margin-left: 0;
     float: none;
   }
+
+  .header-wrapper.sticky-menu .contact-card .email,
+    .header-wrapper.sticky-menu .contact-card .phone-number {
+      padding-left: 0;    
+  }
+
   .header-wrapper.variant-four .contact-card a {
     padding: 6px 12px;
     margin-bottom: 0;
