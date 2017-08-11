@@ -382,7 +382,7 @@ a:focus {
   background: #ffffff;
   position: absolute;
   top: 100%;
-  margin-top: -75px;
+  margin-top: -142px;
   transition: 1s all ease-in-out;
 }
 .image-team .info-team h4 a {
@@ -2019,7 +2019,7 @@ input[type="submit"]:hover {
   margin: 0;
 }
 .main-menu > ul > li > a:after {
-  content: url("../images/main-menu-bg-arrow.png");
+  /*content: url("../images/main-menu-bg-arrow.png");*/
   position: absolute;
   bottom: -2px;
   left: 50%;
@@ -2159,17 +2159,17 @@ input[type="submit"]:hover {
   color: #80878d;
 }
 .contact-card a:hover {
-  color: #e0e7ed;
+  color: #058ED9;
   text-decoration: none;
 }
-.contact-card .email {
+/*.contact-card .email {
   background: url("../images/icon-mail-4.png") no-repeat left center;
   margin-right: 10px;
 }
 .contact-card .phone-number {
   background: url("../images/icon-phone-receiver.png") no-repeat left center;
   margin-right: 10px;
-}
+}*/
 .social_networks {
   float: right;
   list-style: none;
@@ -2318,8 +2318,8 @@ input[type="submit"]:hover {
   top: 61px;
 }
 .header-wrapper.variant-four .header {
-  border-top: 1px solid #778587;
-  border-bottom: 1px solid #778587;
+  /*border-top: 1px solid #778587;
+  border-bottom: 1px solid #778587;*/
 }
 .header-wrapper.variant-four #logo img {
   margin-top: -30px;
@@ -2345,7 +2345,8 @@ input[type="submit"]:hover {
 }
 .header-wrapper.variant-four .main-menu ul li:hover > a {
   background: none;
-  color: #ffffff;
+  color: #058ed9;
+  border-bottom-color: #058ed9;
 }
 .header-wrapper.variant-four .main-menu ul li ul {
   top: 70px;
@@ -2354,14 +2355,14 @@ input[type="submit"]:hover {
   border-bottom-color: #000000;
 }
 .header-wrapper.variant-four .main-menu ul li ul li {
-  border-bottom-color: #535d5e;
+  border-bottom-color: #058ed9;
   margin: 0;
 }
 .header-wrapper.variant-four .main-menu ul li ul li ul {
   top: 0;
 }
 .header-wrapper.variant-four .main-menu ul li ul li:hover {
-  background-color: #000000;
+  background-color: #058ed9;
 }
 .header-wrapper.variant-four .main-menu ul li ul li:hover > a {
   color: #ffffff;
@@ -2372,6 +2373,7 @@ input[type="submit"]:hover {
 }
 .header-wrapper.variant-four .contact-card {
   margin-right: -15px;
+  float: right;
 }
 .header-wrapper.variant-four .contact-card .phone-number,
 .header-wrapper.variant-four .contact-card .email {
@@ -2380,16 +2382,20 @@ input[type="submit"]:hover {
   background-position: left 30px;
 }
 .header-wrapper.variant-four .contact-card .email {
-  background-image: url("../images/icon-mail-6.png");
+  /*background-image: url("../images/icon-mail-6.png");*/
 }
-.header-wrapper.variant-four .contact-card .phone-number {
+/*.header-wrapper.variant-four .contact-card .phone-number {
   background-image: url("../images/icon-phone-receiver-3.png");
   margin-right: 10px;
-}
-.header-wrapper.variant-four .contact-card a:hover {
+}*/
+.header-wrapper.variant-four .contact-card a {
   color: #ffffff;
 }
-.header-wrapper.variant-four .social_networks li a {
+.header-wrapper.variant-four .contact-card a:hover {
+  color: #058ED9;
+}
+.header-wrapper.variant-four .social_networks li a,
+  .header-wrapper.variant-four .social_networks li span {
   font-size: 15px;
   line-height: 69px;
   border-left: none;
@@ -2423,7 +2429,7 @@ input[type="submit"]:hover {
   padding: 20px 8px;
 }
 .header-wrapper.sticky-menu .main-menu ul li:hover > a {
-  color: #373c40;
+  color: #058ED9;
   background: none;
 }
 .header-wrapper.sticky-menu .main-menu ul li ul {
@@ -2449,7 +2455,7 @@ input[type="submit"]:hover {
   margin-right: -15px;
 }
 .header-wrapper.sticky-menu .contact-card a:hover {
-  color: #373c40;
+  color: #058ED9;
 }
 .header-wrapper.sticky-menu .contact-card .email,
 .header-wrapper.sticky-menu .contact-card .phone-number {
@@ -3777,7 +3783,7 @@ h2.post-title a {
   position: absolute;
   left: 50%;
   top: 50%;
-  background: url(../images/website-loader.gif) no-repeat 50% 50% transparent;
+  background: image-url('website-loader.gif') no-repeat 50% 50% transparent;
   margin: -40px 0 0 -40px;
 }
 /*-----------------------------------------------------------------------------------*/
@@ -5788,6 +5794,113 @@ span.line-vertical {
   border-bottom-color: #cccaca;
 }
 /*-----------------------------------------------------------------------------------*/
+/*  Our Cost Section
+/*-----------------------------------------------------------------------------------*/
+.cost {
+  text-align: center;
+  color: #3f5e5d;
+  background-color: #8ccfcc;
+}
+.cost .container {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+.cost .icon-box {
+  padding: 27px 0;
+  min-height: 116px;
+  height: auto !important;
+  height: 116px;
+}
+.cost .title {
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+.cost p {
+  color: #507d7b;
+  margin-bottom: 35px;
+  line-height: 23px;
+}
+.cost .line {
+  display: block;
+  border-bottom: 1px solid #7ab5b2;
+  width: 46.5%;
+  margin: 0 auto 15px;
+}
+.cost .theme-btn {
+  text-transform: uppercase;
+  padding: 9px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3f5e5d;
+  border: 2px solid #3f5e5d;
+}
+.cost .theme-btn:hover {
+  color: #ffffff;
+  background-color: #3f5e5d;
+}
+.cost.variant-three {
+  background-color: #cf5e87;
+}
+.cost.variant-three .icon-box {
+  color: #feccde;
+}
+.cost.variant-three .title {
+  color: #ffffff;
+}
+.cost.variant-three p {
+  color: #efacc4;
+}
+.cost.variant-three .line {
+  border-color: #aa5272;
+}
+.cost.variant-three .theme-btn {
+  color: #ffffff;
+  background-color: #b55276;
+  border: 2px solid #b55276;
+}
+.cost.variant-three .theme-btn:hover {
+  background-color: #713048;
+  border-color: #713048;
+}
+.cost.variant-four {
+  background-color: #f0eeed;
+}
+.cost.variant-four .container {
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+.cost.variant-four .section-header {
+  margin-bottom: 70px;
+}
+.cost.variant-four .section-header p {
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+.cost.variant-four h2.title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+.cost.variant-four h2.title,
+.cost.variant-four .title {
+  color: #524b49;
+}
+.cost.variant-four .title {
+  color: #524b49;
+  margin-bottom: 10px;
+}
+.cost.variant-four p {
+  color: #918d8b;
+}
+.cost.variant-four .services-items .title {
+  font-size: 20px;
+  font-weight: normal;
+}
+.cost.variant-four .line {
+  border-bottom-color: #cccaca;
+}
+/*-----------------------------------------------------------------------------------*/
 /*  Our Work Section
 /*-----------------------------------------------------------------------------------*/
 .our-work #filter-by {
@@ -6640,13 +6753,13 @@ span.line-vertical {
   margin-bottom: 12px;
 }
 .contact-details-list li .icon-telephone {
-  background: url("../images/icon-telephone.png") no-repeat center 0;
+  background: image-url('icon-telephone.png') no-repeat center 0;
 }
 .contact-details-list li .icon-fax {
   background: url("../images/icon-fax.png") no-repeat center 0;
 }
 .contact-details-list li .icon-mail {
-  background: url("../images/icon-mail.png") no-repeat center 0;
+  background: image-url('icon-mail.png') no-repeat center 0;
 }
 .contact-details.variant-three {
   background: #674296;
@@ -6776,9 +6889,9 @@ span.line-vertical {
 .contact-details.variant-four .contact-details-list li .icon-fax {
   background-image: url("../images/icon-fax-3.png");
 }
-.contact-details.variant-four .contact-details-list li .icon-mail {
+/*.contact-details.variant-four .contact-details-list li .icon-mail {
   background-image: url("../images/icon-mail-3.png");
-}
+}*/
 /*-----------------------------------------------------------------------------------*/
 /* google map custom controls
 /*-----------------------------------------------------------------------------------*/
@@ -7108,7 +7221,12 @@ span.line-vertical {
   }
   .header-wrapper.variant-four .social_networks li a {
     margin-left: 0;
+    margin-right: 20px;
+  }
+  .header-wrapper.variant-four .social_networks li span {
+    margin-left: 0;
     margin-right: 10px;
+    font-size: 12px;
   }
   .our-services.variant-three .container {
     padding-bottom: 0;
@@ -7351,6 +7469,9 @@ span.line-vertical {
     width: 100%;
     overflow: hidden;
   }
+  .header-wrapper.variant-four .contact-card {
+    float: none;
+  }
   .header-wrapper.variant-two .mean-container .mean-nav {
     background: transparent;
   }
@@ -7443,7 +7564,7 @@ span.line-vertical {
   }
   .header-wrapper.variant-four {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.08);
-    background: #ffffff;
+    background: #3B0C0E;
     position: fixed !important;
     top: 0;
   }

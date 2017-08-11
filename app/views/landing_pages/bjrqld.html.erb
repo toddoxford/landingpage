@@ -15,9 +15,9 @@
             <ul class="clearfix">
               <li><a href="#top">Home</a></li>
               <li><a href="#about-us">Service</a></li>
-              <li><a href="#work">Cost</a></li>
-              <li><a href="#contact-detail">Contact</a></li>
-              <li><a href="#contact-detail">The Process</a></li>
+              <li><a href="#cost">Cost</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <!-- <li><a href="#contact-detail">The Process</a></li> -->
             </ul>
           </nav>
         </div>
@@ -33,9 +33,12 @@
         <div class="contact-card">
           <div class="wrapper-contact-options">
             <div class="contact-options">
-              <span class="email"><%= link_to fa_icon('envelope', text: 'brett@brjqld.com.au'), 'mailto:brett@brjqld.com.au' %></span>
-              <span class="phone-number"><%= link_to fa_icon('phone-square', text: '61+ 407 768 555'), 'tel:0407768555' %></span>
-              <span class="license visible-md">Lic. No. 1001728</span>
+              <span class="email">
+                <%= link_to fa_icon('envelope', text: 'brett@brjqld.com.au'), 'mailto:brett@brjqld.com.au' %>
+              </span>
+              <span class="phone-number">
+                <%= link_to fa_icon('phone-square', text: '0407 768 555'), 'tel:0407768555' %>
+              </span>
             </div>
           </div>
         </div>
@@ -51,19 +54,19 @@
       <ul class="slides">
         <li>
           <div class="container custom-container-slide">
-            <div class="slide-description">
+            <div class="slide-description parallax-menu">
               <h2 class="title">Residential Design</h2>
               <p>All scale of projects from new residential homes, alterations &amp; additions to units.</p>
-              <a class="slide-link" href="#about-us"> EXPLORE MORE </a>
+              <!-- <a class="slide-link" href="#about-us"> EXPLORE MORE </a> -->
             </div>
           </div>
         </li>
         <li>
           <div class="container custom-container-slide">
-            <div class="slide-description">
-              <h2 class="title">Commercial Deisgn</h2>
+            <div class="slide-description parallax-menu">
+              <h2 class="title">Commercial Design</h2>
               <p>Wide range of projects from commercial alterations/additions, small shopping complexes, gyms to office fitouts.</p>
-              <a class="slide-link" href="#about-us"> EXPLORE MORE </a>
+              <!-- <a class="slide-link" href="#about-us"> EXPLORE MORE </a> -->
             </div>
           </div>
         </li>
@@ -89,7 +92,15 @@
             <div class="info-team">
               <div class="info-contents">
                 <h4><a href="#">Brett Rogers</a></h4>
-                <h5 class="designation">Director/Owner</h5>
+                <h5 class="designation">Director/Owner<br>Lic. No. 1001728</h5>
+                <div class="row organizations">
+                  <div class="col-xs-6 text-center">
+                    <%= image_tag 'bjrqld/masterbuilders.jpg' %>
+                  </div>
+                  <div class="col-xs-6 text-center">
+                    <%= image_tag 'bjrqld/qbcc.jpg' %>
+                  </div>
+                </div>
                 <p>
                   Brett Rogers started BJR Queensland P/L in 1997 as a building design company to service
                   the public, consultants, and builders. During the past 20 years he have been involved
@@ -97,14 +108,6 @@
                 </p>
               </div>
               <div class="wrapper-social text-center">
-              </div>
-            </div>
-            <div class="row organizations">
-              <div class="col-xs-6 text-center">
-                <%= image_tag 'bjrqld/masterbuilders.jpg' %>
-              </div>
-              <div class="col-xs-6 text-center">
-                <%= image_tag 'bjrqld/qbcc.jpg' %>
               </div>
             </div>
           </div>
@@ -141,7 +144,7 @@
   </div>
 </section>
 <!--service section ends-->
-<section id="cost" class="our-services-list variant-four section">
+<section id="cost" class="cost variant-four section">
   <div class="container wow fadeInUp animated">
     <header class="section-header">
       <h2 class="title">What's The Cost</h2>
@@ -230,7 +233,7 @@
         </div>
         <div class="submit-and-loader">
           <input type="submit" value="Submit Now" id="submit" name="submit">
-          <img src="images/ajax-loader-2.gif" id="contact-loader" alt="Loading...">
+          <%= image_tag 'ajax-loader-2.gif', id: 'contact-loader', alt: 'Loading...' %>
         </div>
       </div>
     </form>
