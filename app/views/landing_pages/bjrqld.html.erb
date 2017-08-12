@@ -212,7 +212,7 @@
       <h2 class="title">GET IN TOUCH</h2>
       <p>Fill up the below form and we will get back to you with 24 hours without fail</p>
     </header>
-    <form class="contact-form wow fadeInUp animated" method="post" action="functions.php" novalidate="novalidate">
+    <!-- <form class="contact-form wow fadeInUp animated" method="post" action="functions.php" novalidate="novalidate">
       <p>
         <input type="text" name="name" id="name" class="required" placeholder="Name"
                        title="*Please enter your name">
@@ -236,7 +236,9 @@
           <%= image_tag 'ajax-loader-2.gif', id: 'contact-loader', alt: 'Loading...' %>
         </div>
       </div>
-    </form>
+    </form> -->
+    <%= render partial: '/contacts/new', locals: {contact: Contact.new} %>
+
   </div>
 </section>
 <!--contact form ends-->

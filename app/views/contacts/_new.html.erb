@@ -1,0 +1,11 @@
+<%= form_for(contact, html: {class: 'contact-form wow fadeInUp animated', multipart: true, remote: true}) do |f|%>
+  <%= f.text_field :name, required: true, placeholder: 'Name', class: 'required' %>
+  <%= f.text_field :email, required: true, placeholder: 'Email Address', class: 'required'  %>
+  <%= f.text_field :message, as: :text, required: true, placeholder: 'Message', class: 'required' %>
+  <div class= "hidden">
+    <%= f.hidden_field :nickname, :hint => 'Leave this field blank!' %>
+  </div>
+  <div class="submit-and-loader">
+    <%= f.submit 'Submit Now' %>
+  </div>
+<% end %>
