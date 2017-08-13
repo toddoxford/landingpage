@@ -1,0 +1,153 @@
+<% content_for :title do %>
+  BJR Queensland Designs
+<% end %>
+
+<div class="preloader">
+  <div class="preloaderimg"></div>
+</div>
+<div id="top"></div>
+
+<div class="header-wrapper variant-four sticky-header">
+  <header class="header container custom-container-header" role="banner">
+    <div class="row">
+      <div class="col-md-5 custom-col-var4">
+        <div class="main-menu-wrapper">
+          <nav id="nav" class="parallax-menu main-menu clearfix" role="navigation">
+            <ul class="clearfix">
+              <li><a href="/bjrqld#top">Home</a></li>
+              <li><a href="/bjrqld#about-us">Service</a></li>
+              <li><a href="/bjrqld#cost">Cost</a></li>
+              <li><a href="/bjrqld#contact">Contact</a></li>
+              <li><a href="#process">The Process</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-md-2 custom-col-var4 text-center">
+        <div class="logo-wrapper">
+          <div id="logo">
+            <%= link_to image_tag('bjrqld/logo.png', id: 'logo-image', alt: 'BJR Qld'), '#top', title: 'BJR Qld Home' %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 custom-col-var4 text-right">
+        <div class="contact-card">
+          <div class="wrapper-contact-options">
+            <div class="contact-options">
+              <span class="email">
+                <%= link_to fa_icon('envelope', text: 'brett@brjqld.com.au'), 'mailto:brett@brjqld.com.au' %>
+              </span>
+              <span class="phone-number">
+                <%= link_to fa_icon('phone-square', text: '0407 768 555'), 'tel:0407768555' %>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!--about section-->
+<section id="process" class="the-process section variant-four">
+  <div class="container wow fadeInUp animated">
+    <header class="section-header">
+      <h2 class="title">The Process</h2>
+    </header>
+    <div class="row">
+      <div data-wow-delay="200ms" class="flow wow fadeIn col-sm-offset-4 col-sm-4 animated">
+        <div class="well">
+        <h3 class="title">Contact</h3>
+        <p>
+          Initial potential client contact by phone/email.
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div data-wow-delay="400ms" class="flow wow fadeIn col-sm-offset-4 col-sm-4 animated">
+        <%= image_tag 'bjrqld/flow-down-arrow.png', class: 'flow-arrow' %>
+        <div class="well">
+        <h3 class="title">Discuss</h3>
+        <p>
+          Arrange meeting with client to discuss project.
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div data-wow-delay="600ms" class="flow wow fadeIn col-sm-offset-4 col-sm-4 animated">
+        <%= image_tag 'bjrqld/flow-down-arrow.png', class: 'flow-arrow' %>
+        <div class="well">
+        <h3 class="title">Proposal</h3>
+        <p>
+          Fee proposal forwarded, If accepted, have meeitng to begin project.
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div data-wow-delay="600ms" class="flow wow fadeIn col-sm-offset-4 col-sm-4 animated">
+        <%= image_tag 'bjrqld/flow-down-arrow.png', class: 'flow-arrow' %>
+        <div class="well">
+        <h3 class="title">Sketches</h3>
+        <p>
+          Produce a series of sketches as per client brief.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+      <div data-wow-delay="800ms" class="flow wow fadeIn col-sm-offset-4 col-sm-4 animated">
+        <%= image_tag 'bjrqld/flow-down-arrow.png', class: 'flow-arrow' %>
+        <div class="well">
+        <h3 class="title">Refined Sketches</h3>
+        <p>
+          Sketches gradually become finished drawings after approval from client.
+        </p>
+        </div>
+      </div>
+      <div data-wow-delay="800ms" class="flow flow-right wow col-xs-hide fadeIn col-xs-6 col-sm-4 animated">
+        <%= image_tag 'bjrqld/flow-right-arrow.png', class: 'flow-arrow' %>
+        <div class="well">
+        <h3 class="title">Consultants</h3>
+        <p>
+          If requested arrange other consultants.
+        </p>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div data-wow-delay="1000ms" class="flow wow fadeIn col-xs-6 col-sm-offset-4 col-sm-4 animated">
+        <%= image_tag 'bjrqld/flow-down-arrow.png', class: 'flow-arrow' %>
+        <div class="well">
+        <h3 class="title">Drawings</h3>
+        <p>
+          Completed set of drawings plau any documentation from consultants.
+        </p>
+      </div>
+      </div>
+      <div data-wow-delay="1000ms" class="flow flow-return wow fadeIn col-xs-hide col-xs-6 col-sm-4 animated">
+        <%= image_tag 'bjrqld/flow-return-arrow.png', class: 'flow-arrow-lg' %>
+      </div>
+    </div>
+    <div class="row">
+      <div data-wow-delay="1200ms" class="flow wow fadeIn col-xs-6 col-sm-offset-4 col-sm-4 animated">
+        <%= image_tag 'bjrqld/flow-down-arrow.png', class: 'flow-arrow' %>
+        <h3 class="title">End Of Project</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<!--about section ends-->
+
+
+<section id="contact" class="contact-us variant-four section">
+  <div class="container wow fadeInUp animated">
+    <header class="section-header">
+      <h2 class="title">GET IN TOUCH</h2>
+      <p>Fill up the below form and we will get back to you with 24 hours without fail</p>
+    </header>
+    <%= render partial: '/contacts/new', locals: {contact: Contact.new} %>
+  </div>
+</section>

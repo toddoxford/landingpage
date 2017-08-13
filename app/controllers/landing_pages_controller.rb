@@ -8,6 +8,9 @@ class LandingPagesController < ApplicationController
   def brjqld
     @landingpage = 'bjrqld'
   end
+  def brjqld_process
+    @landingpage = 'bjrqld'
+  end
 
   def nvs
     @landingpage = 'nvs'
