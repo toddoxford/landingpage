@@ -167,3 +167,28 @@ background-color: #fbf8f7;
     }
   }
 }
+
+
+.contact-us .contact-form #contact_email {
+  float: right;
+  width: 48%;
+}
+.contact-us .contact-form #contact_name {
+  float: left;
+  width: 48%;
+}
+
+.contact-us .contact-form .submit {
+  font-size: 14px;
+  color: #ffffff;
+  background: none;
+  border: 2px solid #ffffff;
+  padding: 3px 33px 1px;
+  float: right;
+}
+
+@media only screen and (max-width: 767px) {
+  .xs-hide {
+    display: none;   
+  }
+}

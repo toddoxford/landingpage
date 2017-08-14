@@ -14,10 +14,11 @@
         <div class="main-menu-wrapper">
           <nav id="nav" class="parallax-menu main-menu clearfix" role="navigation">
             <ul class="clearfix">
-              <li><a href="/bjrqld#top">Home</a></li>
-              <li><a href="/bjrqld#about-us">Service</a></li>
-              <li><a href="/bjrqld#cost">Cost</a></li>
-              <li><a href="/bjrqld#contact">Contact</a></li>
+              <li><%= link_to 'Home', bjrqld_path %></li>
+              <li><%= link_to 'Service', "#{bjrqld_path}#about-us" %></li>
+              <li><%= link_to 'Cost', "#{bjrqld_path}#cost" %></li>
+              <li><%= link_to 'Contact', "#{bjrqld_path}#contact" %></li>
+
               <li><a href="#process">The Process</a></li>
             </ul>
           </nav>
@@ -107,7 +108,7 @@
         </p>
         </div>
       </div>
-      <div data-wow-delay="800ms" class="flow flow-right wow col-xs-hide fadeIn col-xs-6 col-sm-4 animated">
+      <div data-wow-delay="800ms" class="flow flow-right wow xs-hide fadeIn col-sm-4 animated">
         <%= image_tag 'bjrqld/flow-right-arrow.png', class: 'flow-arrow' %>
         <div class="well">
         <h3 class="title">Consultants</h3>
@@ -118,21 +119,21 @@
       </div>
     </div>
     <div class="row">
-      <div data-wow-delay="1000ms" class="flow wow fadeIn col-xs-6 col-sm-offset-4 col-sm-4 animated">
+      <div data-wow-delay="1000ms" class="flow wow fadeIn col-sm-offset-4 col-sm-4 animated">
         <%= image_tag 'bjrqld/flow-down-arrow.png', class: 'flow-arrow' %>
         <div class="well">
         <h3 class="title">Drawings</h3>
         <p>
-          Completed set of drawings plau any documentation from consultants.
+          Completed set of drawings plus any documentation from consultants.
         </p>
       </div>
       </div>
-      <div data-wow-delay="1000ms" class="flow flow-return wow fadeIn col-xs-hide col-xs-6 col-sm-4 animated">
+      <div data-wow-delay="1000ms" class="flow flow-return wow fadeIn xs-hide col-sm-4 animated">
         <%= image_tag 'bjrqld/flow-return-arrow.png', class: 'flow-arrow-lg' %>
       </div>
     </div>
     <div class="row">
-      <div data-wow-delay="1200ms" class="flow wow fadeIn col-xs-6 col-sm-offset-4 col-sm-4 animated">
+      <div data-wow-delay="1200ms" class="flow wow fadeIn col-sm-offset-4 col-sm-4 animated">
         <%= image_tag 'bjrqld/flow-down-arrow.png', class: 'flow-arrow' %>
         <h3 class="title">End Of Project</h3>
       </div>
