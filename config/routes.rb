@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   resources "contacts", only: [:create]
 
-  root to: 'landing_pages#home'
+  root to: 'landing_pages#bjrqld'
 end
